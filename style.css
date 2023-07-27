@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+  background-color: rgb(49, 49, 49);
+  padding: 1em;
+  color: wheat;
+}
+
+.req-container {
+  display: flex;
+  padding: 0.7em;
+  width: 100%;
+  height: 80vh;
+  min-width: 150px;
+  min-height: 150px;
+  grid-gap: 0.7em;
+}
+#route {
+  padding: 0.5em;
+  width: 70%;
+  outline: none;
+}
+
+button {
+  padding: 0.5em;
+  width: 30%;
+  cursor: pointer;
+  background-color: rgb(27, 27, 27);
+  border-radius: .3em;
+  transition: .5s;
+  border: none;
+  color: wheat;
+  /* margin: .3em; */
+}
+
+button:hover{
+    background-color: wheat;
+    color: rgb(27, 27, 27);
+}
+
+#method{
+  padding: 0.5em;
+  width: 30%;
+  cursor: pointer;
+  outline: none;
+  font-size: .8em;
+}
+
+.send-req {
+  display: flex;
+  align-items: start;
+  border-radius: 0.5em;
+  padding: 0.3em;
+  grid-gap: .3em;
+}
+
+.show-res {
+  background-color: rgb(70, 70, 70);
+  width: 70%;
+  word-wrap: break-word;
+  overflow-y: scroll;
+  border-radius: 0.5em;
+  padding: 0.5em;
+  font-size: .8em;
+  /* color: white; */
+}
+
+.show-res::-webkit-scrollbar{
+    width: 7px;
+}
+
+.show-res::-webkit-scrollbar-track{
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+}
+
+.show-res::-webkit-scrollbar-thumb{
+    background-color: rgb(70, 70, 70);
+    border-radius: 10px;
+}
+
+.req-div{
+    text-align: center;
+}
+
+.body{
+    display: none;
+    width: 100%;
+    resize: none;
+    padding: 1em;
+    outline: none;
+    border-radius: .5em;
+    background: transparent;
+    color: yellow;
+}
+
+.show{
+  display: block;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .req-container {
+    flex-direction: column;
+  }
+
+  .send-req,
+  .show-res {
+    align-items: center;
+    width: 100%;
+  }
+}

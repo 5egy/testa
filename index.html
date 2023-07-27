@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>TESTA</h1>
+
+        <div class="req-container">
+           <div class="req-div">
+            <div class="send-req">
+                <select name="method" id="method" onchange="showBody()">
+                    <option value="GET" selected>GET</option>
+                    <option value="POST">POST</option>
+                    <option value="PUT">PUT</option>
+                    <option value="PATCH">PATCH</option>
+                    <option value="DELETE">DELETE</option>
+                </select>
+                <input type="text" name="route" id="route" value="" placeholder="url">
+                <button type="submit" onclick="sendRequest()">Send</button>
+            </div>
+
+            <textarea name="body" class="body" cols="30" rows="5" value="" placeholder="Request body..."></textarea>
+           </div>
+
+            <div class="show-res">
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
