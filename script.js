@@ -3,6 +3,7 @@ const body = document.querySelector(".body")
 const method = document.getElementById("method")
 const showRes = document.querySelector(".show-res")
 
+
 function showBody(){
   if(method.value !== "Get"){
     body.classList.add("show")
